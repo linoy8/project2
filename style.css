@@ -85,14 +85,14 @@ nav a {
         text-decoration: underline;
     }
 
-/*.cards__wrap {
+.cards__wrap {
     display: flex;
    
     flex-direction: column;
     gap: 20px;
-}*/
+}
 
-/*.card {
+.card {
     display: flex;
     border: 2px solid rgba(211, 211, 211, 0.6);
     border-radius: 16px;
@@ -164,7 +164,7 @@ nav a {
     .card__like img {
         width: 22px;
         height: 22px;
-    }*/
+    }
 
 #section2 {
     background: transparent;
