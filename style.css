@@ -165,12 +165,18 @@ nav a {
         width: 22px;
         height: 22px;
     }
-
-#section2 {
-    background: transparent;
+.services__item a {
+    text-decoration: none;
+    color: aqua;
 }
+    .services__item a:hover {
+        text-decoration: underline;
+    }
+    #section2 {
+        background: transparent;
+    }
 
-/*.services__wrap {
+.services__wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -209,7 +215,7 @@ nav a {
         .services__item button img {
             height: 35px;
             width: 40px;
-        }*/
+        }
 
 .footer {
     text-align: center;
