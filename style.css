@@ -32,9 +32,7 @@ img {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+   
 }
 
 .section {
@@ -49,6 +47,7 @@ img {
 }
 
     .header .container {
+        display:flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -56,17 +55,38 @@ img {
     }
 
 .container__wrap {
-    padding: 20px;
+  
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    gap:150px;
+}
+ .container__wrap > img{
+  padding: 20px;
     animation-name: slidein;
     animation-duration: 2s;
     animation-iteration-count: 2;
     animation-direction: alternate;
     animation-fill-mode: forwards;
+ }
+.container__img2 {
+    width: 200px; 
+   
+    
+  
+    animation-name: slidein;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+  
+
 }
 
-    .container__wrap > img {
-        width: 300px;
-    }
+.container__wrap > img {
+    width: 300px;
+}
 
 nav ul {
     list-style: none;
@@ -167,11 +187,12 @@ nav a {
     }
 .services__item a {
     text-decoration: none;
-    color: aqua;
+    color:black;
+/*    color: aqua;*/
 }
-    .services__item a:hover {
+/*    .services__item a:hover {
         text-decoration: underline;
-    }
+    }*/
     #section2 {
         background: transparent;
     }
@@ -192,11 +213,19 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     text-align: center;
+
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+    .services__item a {
+     
+        display: block;
+    }
     .services__item img {
+        display: block;
+        margin: 0 auto;
         width: 100px;
     }
 
@@ -226,6 +255,7 @@ nav a {
 }
 
     .footer .container {
+        display:flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -263,3 +293,5 @@ nav a {
         transform: translateX(300px);
     }
 }
+
+
